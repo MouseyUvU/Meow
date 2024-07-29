@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(348, 83%, 95%);
+}
+#imgClickAndChange {
+    height: 170px;
+    width: 396px;
+}
+button {
+    padding: 0;
+    border: none;
+}
