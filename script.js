@@ -20,7 +20,7 @@ Meow_sfx.src = meow_sfx
     
 $img.addEventListener('click', () => {
   const el = document.createElement('audio');
-  el.src = './meow/Meow_sfx.mp3';
+  el.src = 'Meow_sfx.mp3';
   document.body.append(el);
   el.play();
 });
