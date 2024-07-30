@@ -18,7 +18,8 @@ let Meow_sfx = new Audio();
 Meow_sfx.src = meow_sfx
     const el = document.createElement('audio')
     
-$img.addEventListener('click', changeImage() () => {
+$img.addEventListener('click', () => {
+  changeImage();
   const el = document.createElement('audio');
   el.src = 'Meow_sfx.mp3';
   document.body.append(el);
