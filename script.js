@@ -1,7 +1,7 @@
 const $img = document.getElementById('imgClickAndChange');
-const kitty_meow = './meow/kitty_meow.jpg';
-const silly_kitty = './meow/silly_kitty.jpg';
-const meow_sfx = './meow/Meow_sfx.mp3';
+const kitty_meow = 'kitty_meow.jpg';
+const silly_kitty = 'silly_kitty.jpg';
+const meow_sfx = 'Meow_sfx.mp3';
 
 function changeImage() {
     console.log($img.dataset.kitty)
