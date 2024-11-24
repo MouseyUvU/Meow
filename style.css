@@ -14,3 +14,11 @@ button {
     padding: 0;
     border: none;
 }
+button:hover {
+	outline-offset: 3px;
+	outline: solid #000 2px;
+}
+button:focus-visible {
+	outline-offset: 3px;
+	outline: solid #000 2px;
+}
