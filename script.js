@@ -1,4 +1,6 @@
+const $button = document.querySelector("button");
 const $img = document.getElementById('imgClickAndChange');
+
 const kitty_meow = 'kitty_meow.jpg';
 const silly_kitty = 'silly_kitty.jpg';
 const meow_sfx = 'Meow_sfx.mp3';
@@ -18,7 +20,7 @@ function playSound() {
 	audio.play();
 }
 
-$img.addEventListener('click', () => {
+$button.addEventListener('click', () => {
 	updateImage();
 	playSound()
 });
