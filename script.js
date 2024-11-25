@@ -1,18 +1,14 @@
 const $button = document.querySelector("button");
 const $img = document.getElementById('imgClickAndChange');
 
-const kitty_meow = 'kitty_meow.jpg';
-const silly_kitty = 'silly_kitty.jpg';
+const kitty_image_sources = ["kitty_meow.jpg", "silly_kitty.jpg", "lily_gato.jpg"]
 const meow_sfx = 'Meow_sfx.mp3';
 
+let current_image_index = 0;
+
 function updateImage() {
-	if ($img.dataset.kitty === "meow") {
-		$img.dataset.kitty = "silly";
-		$img.src = silly_kitty;
-	} else {
-		$img.dataset.kitty = "meow";
-		$img.src = kitty_meow;
-	}
+	current_image_index = (current_image_index + 1) % kitty_image_sources.length;
+	$img.src = kitty_image_sources[current_image_index];
 }
 
 function playSound() {
